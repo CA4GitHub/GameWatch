@@ -14,13 +14,13 @@
 		01C8691019B01D9A00D30D45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8690F19B01D9A00D30D45 /* main.m */; };
 		01C8691419B01D9A00D30D45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8691319B01D9A00D30D45 /* AppDelegate.m */; };
 		01C8691719B01D9A00D30D45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C8691519B01D9A00D30D45 /* Main.storyboard */; };
-		01C8691A19B01D9A00D30D45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8691919B01D9A00D30D45 /* ViewController.m */; };
 		01C8691C19B01D9A00D30D45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C8691B19B01D9A00D30D45 /* Images.xcassets */; };
 		01C8692319B01D9A00D30D45 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8692219B01D9A00D30D45 /* XCTest.framework */; };
 		01C8692419B01D9A00D30D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8690319B01D9A00D30D45 /* Foundation.framework */; };
 		01C8692519B01D9A00D30D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8690719B01D9A00D30D45 /* UIKit.framework */; };
 		01C8692D19B01D9A00D30D45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01C8692B19B01D9A00D30D45 /* InfoPlist.strings */; };
 		01C8692F19B01D9A00D30D45 /* GameWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8692E19B01D9A00D30D45 /* GameWatchTests.m */; };
+		01C8693A19B024C100D30D45 /* FLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8693919B024C100D30D45 /* FLLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		01C8691219B01D9A00D30D45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		01C8691319B01D9A00D30D45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		01C8691619B01D9A00D30D45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		01C8691819B01D9A00D30D45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		01C8691919B01D9A00D30D45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		01C8691B19B01D9A00D30D45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		01C8692119B01D9A00D30D45 /* GameWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C8692219B01D9A00D30D45 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		01C8692A19B01D9A00D30D45 /* GameWatchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameWatchTests-Info.plist"; sourceTree = "<group>"; };
 		01C8692C19B01D9A00D30D45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		01C8692E19B01D9A00D30D45 /* GameWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameWatchTests.m; sourceTree = "<group>"; };
+		01C8693819B024C100D30D45 /* FLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLoginViewController.h; sourceTree = "<group>"; };
+		01C8693919B024C100D30D45 /* FLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +112,11 @@
 		01C8690919B01D9A00D30D45 /* GameWatch */ = {
 			isa = PBXGroup;
 			children = (
+				01C8693819B024C100D30D45 /* FLLoginViewController.h */,
+				01C8693919B024C100D30D45 /* FLLoginViewController.m */,
 				01C8691219B01D9A00D30D45 /* AppDelegate.h */,
 				01C8691319B01D9A00D30D45 /* AppDelegate.m */,
 				01C8691519B01D9A00D30D45 /* Main.storyboard */,
-				01C8691819B01D9A00D30D45 /* ViewController.h */,
-				01C8691919B01D9A00D30D45 /* ViewController.m */,
 				01C8691B19B01D9A00D30D45 /* Images.xcassets */,
 				01C8690A19B01D9A00D30D45 /* Supporting Files */,
 			);
@@ -249,7 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01C8691A19B01D9A00D30D45 /* ViewController.m in Sources */,
+				01C8693A19B024C100D30D45 /* FLLoginViewController.m in Sources */,
 				01C8691419B01D9A00D30D45 /* AppDelegate.m in Sources */,
 				01C8691019B01D9A00D30D45 /* main.m in Sources */,
 			);

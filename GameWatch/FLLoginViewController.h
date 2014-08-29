@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FLLoginViewController.h
 //  GameWatch
 //
 //  Created by Fredrick Lawton on 8/28/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FLLoginViewController : UIViewController
 
 @end
