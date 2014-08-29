@@ -9,6 +9,9 @@
 #import "FLSignUpViewController.h"
 
 @interface FLSignUpViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *username;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UITextField *emailAddress;
 
 @end
 
@@ -47,6 +50,20 @@
 */
 - (IBAction)signUpForGameWatch:(id)sender {
     NSLog(@"Sign Up For Game Watch");
+    
+    //trime whitespaces & new lines at beginning & end of each textfields' text
+    NSString *username = [self.username.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *password = [self.password.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *emailAddress = [self.emailAddress.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    //check in valid strings entered
+    //this will need to be modified in the future
+    if ([username length]==0 || [password length]==0 || [emailAddress length]==0) {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Entry error" message:@"Please enter a valid username, email, and password." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }
+    
+    
 }
 
 - (IBAction)goToLogin:(id)sender {

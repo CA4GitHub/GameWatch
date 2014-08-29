@@ -228,6 +228,11 @@
                         <color key="backgroundColor" red="0.027450982481241226" green="0.73333334922790527" blue="0.062745101749897003" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="VLP-5C-N5h"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="pAI-8O-cVl" id="sv0-WL-HhK"/>
+                        <outlet property="password" destination="OmR-BJ-GHS" id="6y3-mi-8KL"/>
+                        <outlet property="username" destination="evE-rW-Ej5" id="iLj-zd-1If"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TKU-oK-LZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
