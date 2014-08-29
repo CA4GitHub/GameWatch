@@ -21,6 +21,8 @@
 		01C8692D19B01D9A00D30D45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01C8692B19B01D9A00D30D45 /* InfoPlist.strings */; };
 		01C8692F19B01D9A00D30D45 /* GameWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8692E19B01D9A00D30D45 /* GameWatchTests.m */; };
 		01C8693A19B024C100D30D45 /* FLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8693919B024C100D30D45 /* FLLoginViewController.m */; };
+		01C8695119B0752C00D30D45 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8694E19B0752C00D30D45 /* TPKeyboardAvoidingScrollView.m */; };
+		01C8695219B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C8695019B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		01C8692E19B01D9A00D30D45 /* GameWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameWatchTests.m; sourceTree = "<group>"; };
 		01C8693819B024C100D30D45 /* FLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLoginViewController.h; sourceTree = "<group>"; };
 		01C8693919B024C100D30D45 /* FLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLLoginViewController.m; sourceTree = "<group>"; };
+		01C8694D19B0752C00D30D45 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = ThirdParty/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		01C8694E19B0752C00D30D45 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = ThirdParty/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		01C8694F19B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "ThirdParty/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		01C8695019B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "ThirdParty/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,10 @@
 		01C8690919B01D9A00D30D45 /* GameWatch */ = {
 			isa = PBXGroup;
 			children = (
+				01C8694D19B0752C00D30D45 /* TPKeyboardAvoidingScrollView.h */,
+				01C8694E19B0752C00D30D45 /* TPKeyboardAvoidingScrollView.m */,
+				01C8694F19B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				01C8695019B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 				01C8693819B024C100D30D45 /* FLLoginViewController.h */,
 				01C8693919B024C100D30D45 /* FLLoginViewController.m */,
 				01C8691219B01D9A00D30D45 /* AppDelegate.h */,
@@ -250,8 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01C8693A19B024C100D30D45 /* FLLoginViewController.m in Sources */,
+				01C8695119B0752C00D30D45 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				01C8691419B01D9A00D30D45 /* AppDelegate.m in Sources */,
 				01C8691019B01D9A00D30D45 /* main.m in Sources */,
+				01C8695219B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
