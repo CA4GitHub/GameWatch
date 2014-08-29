@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0178CED319B11C25005E3B48 /* FLMyTeamsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0178CED219B11C25005E3B48 /* FLMyTeamsTableViewController.m */; };
+		0178CED619B11DE2005E3B48 /* FLSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0178CED519B11DE2005E3B48 /* FLSignUpViewController.m */; };
 		01C8690419B01D9A00D30D45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8690319B01D9A00D30D45 /* Foundation.framework */; };
 		01C8690619B01D9A00D30D45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8690519B01D9A00D30D45 /* CoreGraphics.framework */; };
 		01C8690819B01D9A00D30D45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8690719B01D9A00D30D45 /* UIKit.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0178CED119B11C25005E3B48 /* FLMyTeamsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMyTeamsTableViewController.h; sourceTree = "<group>"; };
+		0178CED219B11C25005E3B48 /* FLMyTeamsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMyTeamsTableViewController.m; sourceTree = "<group>"; };
+		0178CED419B11DE2005E3B48 /* FLSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLSignUpViewController.h; sourceTree = "<group>"; };
+		0178CED519B11DE2005E3B48 /* FLSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLSignUpViewController.m; sourceTree = "<group>"; };
 		01C8690019B01D9A00D30D45 /* GameWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C8690319B01D9A00D30D45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01C8690519B01D9A00D30D45 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +124,10 @@
 		01C8690919B01D9A00D30D45 /* GameWatch */ = {
 			isa = PBXGroup;
 			children = (
+				0178CED419B11DE2005E3B48 /* FLSignUpViewController.h */,
+				0178CED519B11DE2005E3B48 /* FLSignUpViewController.m */,
+				0178CED119B11C25005E3B48 /* FLMyTeamsTableViewController.h */,
+				0178CED219B11C25005E3B48 /* FLMyTeamsTableViewController.m */,
 				01C8694D19B0752C00D30D45 /* TPKeyboardAvoidingScrollView.h */,
 				01C8694E19B0752C00D30D45 /* TPKeyboardAvoidingScrollView.m */,
 				01C8694F19B0752C00D30D45 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
@@ -259,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0178CED319B11C25005E3B48 /* FLMyTeamsTableViewController.m in Sources */,
 				01C8693A19B024C100D30D45 /* FLLoginViewController.m in Sources */,
+				0178CED619B11DE2005E3B48 /* FLSignUpViewController.m in Sources */,
 				01C8695119B0752C00D30D45 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				01C8691419B01D9A00D30D45 /* AppDelegate.m in Sources */,
 				01C8691019B01D9A00D30D45 /* main.m in Sources */,
@@ -468,6 +480,7 @@
 				01C8693419B01D9A00D30D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01C8693519B01D9A00D30D45 /* Build configuration list for PBXNativeTarget "GameWatchTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +489,7 @@
 				01C8693719B01D9A00D30D45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

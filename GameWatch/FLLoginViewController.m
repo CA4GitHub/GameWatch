@@ -30,7 +30,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.navigationController.navigationBarHidden = YES;
+    self.tabBarController.tabBar.hidden = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +58,9 @@
 - (IBAction)logIn:(id)sender {
     NSLog(@"Log In");
 }
-- (IBAction)signUp:(id)sender {
+- (IBAction)goToSignUp:(id)sender {
+    //hide keyboard so if user returns from Sign Up page the keyboard doesn't show initially
+    [self hideKeyboard:sender];
     NSLog(@"Sign Up");
 }
 - (IBAction)enableSecureText:(id)sender {
