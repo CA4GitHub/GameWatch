@@ -7,6 +7,7 @@
 //
 
 #import "FLLoginViewController.h"
+#import <Parse/Parse.h>
 
 @interface FLLoginViewController ()
 
@@ -57,6 +58,31 @@
 #pragma mark - IBActions
 - (IBAction)logIn:(id)sender {
     NSLog(@"Log In");
+    NSString *username = self.username.text;
+    NSString *password = self.password.text;
+    
+    if ([username length]==0 || [password length]==0) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Entry error"
+                                                            message:@"Please enter a valid username and password." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    }else{
+        [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error){
+                                if (user) {
+                                    // Do stuff after successful login.
+                                    [self.navigationController popToRootViewControllerAnimated:YES];
+                                    
+                                } else {
+                                    // The login failed. Check error to see why.
+                                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error Logging in"
+                                                                                        message:[error.userInfo objectForKey:@"error"]
+                                                                                       delegate:nil
+                                                                              cancelButtonTitle:@"OK"
+                                                                              otherButtonTitles:nil];
+                                    
+                                    [alertView show];
+                                }
+        }];
+    }
 }
 - (IBAction)goToSignUp:(id)sender {
     //hide keyboard so if user returns from Sign Up page the keyboard doesn't show initially
